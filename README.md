@@ -2,9 +2,9 @@
 Designing a Digital Circuit and performing pre and post synthesis simulation. 
 
 
-# Design of APB Bridge based on AMBA AXI 4.0-
+# APB Bridge based on AMBA AXI 4.0-
 
-## Designing a APB to AXI Bridge which does Read operation where the Master uses AXI protocol and the Slaves use APB protocol-
+## Designing and Testing an APB to AXI Bridge which does Read operation where the Master uses AXI protocol and the Slaves use APB protocol-
 
 This project focuses on creating a simplified bridge that facilitates read transactions from APB peripherals, offering enhanced understandability by utilizing a streamlined set of signals.
 
