@@ -194,11 +194,11 @@ In the GTKWAVE waveform viewer:
 ![presynth](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/f32cf25b-3965-493a-a5e5-852949e2149c)
 
 ## Synthesis using Yosys-
-In the terminal:
+In the terminal :
 ```
 yosys
 ```
-Yosys script (executed line by line);
+Yosys script (executed line by line) :
 ```
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog bridge.v
@@ -209,7 +209,13 @@ show bridge
 write_verilog -noattr netlist_bridge.v
 exit
 ```
-## Synthesized Netlist view-
+### Synthesis Statistics-
+![statictics](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/12a27ce2-716f-4f20-b705-c81951558075)
+
+### Cells Mapped during Synthesis-
+![mapped](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/74235dae-fd9f-41b4-9b89-35373587f8da)
+
+### Synthesized Netlist view-
 
 ![synth1](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/162e0ea6-c8b1-4104-843c-5de31cf82810)
 ![synth2](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/9d7bd266-c0cf-4d9c-8331-0916f81924db)
@@ -217,5 +223,7 @@ exit
 ![synth4](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/e31c9cbe-db26-412a-9278-475681a21fbd)
 ![synth5](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/394bf9b2-436f-42d1-82f5-762e8bab9407)
 
-For more closer look
-*
+For more closer look :
+* https://github.com/karthikkbs05/SynthoSphere-/tree/main/synthesis%20netlist%20image
+
+
