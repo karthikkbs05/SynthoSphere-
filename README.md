@@ -183,3 +183,13 @@ input PREADY
     
 endmodule
 ```
+## Pre-Synthesis Simulation using Iverilog-
+In the terminal:
+```
+iverilog bridge.v bridge_tb.v
+./a.out
+gtkwave bridge.vcd
+```
+In the GTKWAVE waveform viewer:
+![presynth](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/f32cf25b-3965-493a-a5e5-852949e2149c)
+
