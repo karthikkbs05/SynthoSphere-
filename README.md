@@ -226,4 +226,27 @@ exit
 For more closer look :
 * https://github.com/karthikkbs05/SynthoSphere-/tree/main/synthesis%20netlist%20image
 
+## Post-Synthesis Simulation-
+### Error Occured-
+The '$_DLATCH_P_' in the did not get mapped to any cells during synthesis
+![error_mes](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/f1f1a732-e56c-4662-8cb5-7944d777d464)
+
+![error_dflop](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/c77434ee-b091-4b0a-ad4b-57c227024bec)
+
+### Rectification Trial 1-
+* Tried mapping '$_DLATCH_P_' manually to 'sky130_fd_sc_hd__dlrtn' which is present in the library file
+* Signal 'E'(actice high) had to replaced with 'GATE_N'(active low)
+* 'sky130_fd_sc_hd__dlrtn' module had 'RESET_B' signal, hence '.RESET_B(res_n)' was added.
+  
+![Screenshot from 2023-08-25 21-20-03](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/a173b199-60c9-49f8-bd9a-11ec6f39046c)
+
+
+Rectified part of the netlist :
+
+
+![Screenshot from 2023-08-26 00-26-17](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/33f5a6d7-3243-4528-bc71-71b93a2e642b)
+
+### Rectification Trial 1 failed-
+Error in Post-Synthesis simulation
+![Screenshot from 2023-08-26 00-23-53](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/5515d609-a454-407c-9f4c-9061e49d0bee)
 
