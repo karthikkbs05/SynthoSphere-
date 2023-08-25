@@ -232,7 +232,7 @@ exit
 For more closer look :
 * https://github.com/karthikkbs05/SynthoSphere-/tree/main/synthesis%20netlist%20image
 
-## Post-Synthesis Simulation-
+## Post-Synthesis Simulation (GLS)-
 ### Error Occured-
 The '$_DLATCH_P' in the did not get mapped to any cells during synthesis
 
