@@ -18,6 +18,7 @@ This project focuses on creating a simplified bridge that facilitates read trans
 
 
 ## Block diagram-
+
 ![download](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/63491d39-3d3e-44f6-b5ed-d0d726e7e09a)
 
 From the Block Diagram we observe that the Bridge has:
@@ -28,12 +29,14 @@ From the Block Diagram we observe that the Bridge has:
 
 
 ## APB Master-
+
 ![2-Figure4-1](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/6c0c0cd9-96d5-4537-8885-eb3771a4b52c)
 ## APB Master Read Operation-
 ![amba-3-apb-5](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/b8111c79-7ced-4061-8200-3b76d21ffa37)
 
 
 ## AXI Slave (Read Operation)-
+
 ![Screenshot (224)](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/ba0cab30-f121-49a6-9121-3cc46f32f1f7)
 ![Screenshot (225)](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/be9d808d-f62d-4b73-9f81-4ee668e32b59)
 
@@ -191,6 +194,7 @@ iverilog bridge.v bridge_tb.v
 gtkwave bridge.vcd
 ```
 In the GTKWAVE waveform viewer:
+
 ![presynth](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/f32cf25b-3965-493a-a5e5-852949e2149c)
 
 ## Synthesis using Yosys-
@@ -210,9 +214,11 @@ write_verilog -noattr netlist_bridge.v
 exit
 ```
 ### Synthesis Statistics-
+
 ![statictics](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/12a27ce2-716f-4f20-b705-c81951558075)
 
 ### Cells Mapped during Synthesis-
+
 ![mapped](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/74235dae-fd9f-41b4-9b89-35373587f8da)
 
 ### Synthesized Netlist view-
