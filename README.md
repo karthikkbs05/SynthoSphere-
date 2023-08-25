@@ -234,14 +234,14 @@ For more closer look :
 
 ## Post-Synthesis Simulation-
 ### Error Occured-
-The '$_DLATCH_P_' in the did not get mapped to any cells during synthesis
+The '$_DLATCH_P' in the did not get mapped to any cells during synthesis
 
 ![error_mes](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/f1f1a732-e56c-4662-8cb5-7944d777d464)
 
 ![error_dflop](https://github.com/karthikkbs05/SynthoSphere-/assets/129792064/c77434ee-b091-4b0a-ad4b-57c227024bec)
 
 ### Rectification Trial 1-
-* Tried mapping '$_DLATCH_P_' manually to 'sky130_fd_sc_hd__dlrtn' which is present in the library file
+* Tried mapping '$_DLATCH_P' manually to 'sky130_fd_sc_hd__dlrtn' which is present in the library file
 * Signal 'E'(actice high) had to replaced with 'GATE_N'(active low)
 * 'sky130_fd_sc_hd__dlrtn' module had 'RESET_B' signal, hence '.RESET_B(res_n)' was added.
   
