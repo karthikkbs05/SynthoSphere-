@@ -53,7 +53,6 @@ output rresp,rlast,
 input rready,
 output rvalid,
 
-//input PCLK,
 output [2:0]PADDR,
 //output [15:0]PWDATA,
 input [15:0]PRDATA,
